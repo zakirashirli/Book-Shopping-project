@@ -26,5 +26,12 @@ public class BookController {
 		return "books";
 
 	}
+	
+	@GetMapping(path = "/books/new")
+	public String openNewBookPage() {
+		
+		return "new-book";
+
+	}
 
 }
