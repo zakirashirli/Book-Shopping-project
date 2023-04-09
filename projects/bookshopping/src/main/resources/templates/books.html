@@ -2,6 +2,8 @@
 
 <html lang="en" xmlns:th="http://thymeleaf.org">
 	<head>
+	
+		<title>Kitablar</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		
@@ -72,6 +74,8 @@
 		</script>
 	</head>
 	<body>
+		<div th:replace="menu :: menu"></div>
+
 		<a th:href="@{/books/new}" id="new-book-button">Yeni Kitab</a>
 		<a th:href="@{/home}">Home Page</a>
 		<table id="books-table">

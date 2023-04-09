@@ -2,15 +2,13 @@
 
 <html lang="en">
 	<head>
-	
-		<tittle>Home Page</tittle>
-
+		<title>Home Page</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	</head>
 	<body>
-	
-		<h1>Welcome to my page</h1>
+		<div th:replace="menu :: menu"></div>
+		<h1 style="color: green;">Welcome to my page</h1>
 		<a th:href="@{/books}" class="btn btn-primary">Kitablarin Siyahisi</a>
 		<br>
 		<a th:href="@{/logout}" class="btn btn-danger">Cixish</a>
