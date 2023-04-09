@@ -2,8 +2,6 @@
 
 <html lang="en" xmlns:th="http://thymeleaf.org">
 	<head>
-	
-		<tittle>Kitablar</tittle>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		
@@ -107,7 +105,7 @@
 					<td th:text="${book.pageCount}"></td>
 					<td th:text="${book.image}"></td>
 					<td>
-						<a th:href="@{/books/delete/{id}(id=${book.id})}" class="btn btn-danger">Sil</a>
+						<a th:href="@{/books/delete/{id}(id=${book.id})}" class="btn btn-danger" onclick="return confirm('Silməyə əminsən?');">Sil</a>
 						<a th:href="@{/books/edit/{id}(id=${book.id})}" class="btn btn-primary">Redakte</a>
 					</td>
 
