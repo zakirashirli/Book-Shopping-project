@@ -4,12 +4,16 @@
 	<head>
 	
 		<tittle>Home Page</tittle>
-	
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	</head>
 	<body>
 	
 		<h1>Welcome to my page</h1>
-		<a th:href="@{/books}">Kitablarin Siyahisi</a>
+		<a th:href="@{/books}" class="btn btn-primary">Kitablarin Siyahisi</a>
+		<br>
+		<a th:href="@{/logout}" class="btn btn-danger">Cixish</a>
 		
 	</body>
 </html>

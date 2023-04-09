@@ -23,7 +23,7 @@
 		<form th:action="@{/books/new-book-process}" method="POST" th:object="${book}" id="book-register-form">
 			
 			<div class="form-group">
-				<label for="book-id">Id: </label>
+				<!-- <label for="book-id"></label> -->
 				<input type="hidden" id="book-id" th:field="*{id}"/>
 			</div>
 			
