@@ -18,7 +18,7 @@
 	</head>
 	<body>
 	
-		<h1 style="text-align: center;">New Book</h1>
+		<h1 th:text="${header}" style="text-align: center; color: green;">New Book</h1>
 
 		<form th:action="@{/books/new-book-process}" method="POST" th:object="${book}" id="book-register-form">
 			
@@ -52,7 +52,7 @@
 				<input type="number" id="book-page-count" th:field="*{pageCount}"/>
 			</div>
 
-			<input type="submit" value="Qeydiyyat"/>
+			<input type="submit" value="Yadda Saxla"/>
 			
 		</form>
 
