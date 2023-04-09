@@ -2,6 +2,7 @@
 
 <html lang="en">
 	<head>
+		<meta charset="utf-8">
 		<title>Menu</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -10,14 +11,21 @@
 	
 		<div th:fragment="menu">
 
-			<ul>
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				<ul class="navbar-nav">
 
-				<li>Esas Sehive</li>
-				<li>Kitablar</li>
-				<li>Sifarishler</li>
-				<li>Alici</li>
-
-			</ul>
+					<li class="nav-item"><a class="nav-link" th:href="@{/home}">Esas Sehive</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/books}">Kitablar</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/order}">Sifarishler</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/customer}">Alici</a></li>
+	
+				</ul>
+	
+				<ul class="navbar-nav navbar-collapse justify-content-end">
+					<li><a class="nav-link" th:href="@{/login}">Girish</a></li>
+					<li><a class="nav-link" th:href="@{/logout}">Cixish</a></li>
+				</ul>
+			</nav>
 
 		</div>
 		
